@@ -5,23 +5,23 @@
 
 "use strict"
 
- // This function displays the result of a product of two positive integers using a for loop with addition instead of multiplication 
-function displayFactorials() {
+   // This function displays the factorial of numbers 
+  function displayFactorials() {
+
+  // initialize counter to zero and factorial to 1 
+	let counter = 1;
+  let facAnswer = 1;
 	
-	// get the two positive integers from the user 
-	let firstNum = parseInt(document.getElementById('firstNum').value);
+	// get a positive integer from the user 
+	let userNum = parseInt(document.getElementById('userNum').value);
 
-  let secondNum = parseInt(document.getElementById('secondNum').value);
+  // use a do..while loop to calculate the factorial of a number 
+	do {
+   facAnswer = facAnswer * counter 
+   //increment the counter 
+   counter = counter + 1
+  } while (counter <= userNum)
 
-	// initialize product as zero
-	let product = 0;
-
-  // use a for loop to calculate product of two positive integers solely using addition 
-	for (let counter = 1; counter <= secondNum; counter++) {
-
-    product = product + firstNum
-  }
-
-  	// return the result back to user
-  	document.getElementById('display-results').innerHTML = "The product of these two positive integers is " + product
+  // return the result back to user
+  document.getElementById('display-results').innerHTML = "The factorial of this positive integer is " + facAnswer;
 }

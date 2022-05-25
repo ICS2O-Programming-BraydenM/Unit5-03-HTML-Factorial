@@ -20,18 +20,16 @@
    <center>
 <!-- Link to JS file sheet -->
     <script src="./js/script.js"></script>
-<!-- Adding a JavaScript button that displays factorials -->
-    <h1>Factorials of numbers program in JS</h1>
-		<h3>This program will display factorials of a number:</h3>
+<!-- Adding a JavaScript button that displays the factorial of a positive integer -->
+    <h1>Factorial of numbers program in JS</h1>
+		<h3>This program will display the factorial of a positive integer:</h3>
 		<table>
 			<tr align = "center">
 				<td valign="top" align="right">					
 					<form action="javascript:displayFactorials()">			
-						<label for="userNum">Enter a maximum number:</label>
-						<input type="number" step="1" id="maxNum"><br><br>		
-            <label for="userNum">Enter a minimum number:</label>
-						<input type="number" step="1" id="minNum"><br><br>		
-						<input type="submit" value="Display Numbers">
+						<label for="userNum">Enter a positive integer:</label>
+						<input type="number" step="1" min="0" id="userNum"><br><br>			
+						<input type="submit" value="Display factorial">
 					</form>
 				</td>
 				<td valign="top" align="left">
